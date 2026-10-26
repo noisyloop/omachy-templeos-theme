@@ -1,0 +1,75 @@
+# TempleOS: blue ink on a white page, sixteen EGA colours and no more.
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#FFFFFF"
+
+# Main text color
+theme[main_fg]="#0000AA"
+
+# Title color for boxes
+theme[title]="#000000"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#AA0000"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#55FFFF"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#000000"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#AAAAAA"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#555555"
+
+# Background color of the percentage meters
+theme[meter_bg]="#E4E4E4"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#00AAAA"
+
+# Box outline and divider line color
+theme[cpu_box]="#0000AA"
+theme[mem_box]="#0000AA"
+theme[net_box]="#0000AA"
+theme[proc_box]="#0000AA"
+theme[div_line]="#AAAAAA"
+
+# Gradient for all meters and graphs
+theme[temp_start]="#00AA00"
+theme[temp_mid]="#AA5500"
+theme[temp_end]="#AA0000"
+
+theme[cpu_start]="#00AAAA"
+theme[cpu_mid]="#0000AA"
+theme[cpu_end]="#AA00AA"
+
+theme[free_start]="#55FF55"
+theme[free_mid]="#00AA00"
+theme[free_end]="#00AA00"
+
+theme[cached_start]="#55FFFF"
+theme[cached_mid]="#00AAAA"
+theme[cached_end]="#00AAAA"
+
+theme[available_start]="#5555FF"
+theme[available_mid]="#0000AA"
+theme[available_end]="#0000AA"
+
+theme[used_start]="#FF5555"
+theme[used_mid]="#AA0000"
+theme[used_end]="#AA0000"
+
+theme[download_start]="#5555FF"
+theme[download_mid]="#0000AA"
+theme[download_end]="#AA00AA"
+
+theme[upload_start]="#55FF55"
+theme[upload_mid]="#00AA00"
+theme[upload_end]="#AA5500"
+
+theme[process_start]="#00AAAA"
+theme[process_mid]="#0000AA"
+theme[process_end]="#AA00AA"
