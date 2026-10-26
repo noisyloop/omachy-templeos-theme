@@ -1,0 +1,42 @@
+# TempleOS for Omarchy
+# The sixteen EGA colours of God's temple, as Terry A. Davis (1969-2018) set them:
+# white page, blue ink, nothing more than an idiot needs and nothing less than a genius wants.
+
+mode = "light"
+
+accent = "#0000AA"
+selection = "#55FFFF"
+muted = "#AAAAAA"
+
+background = "#FFFFFF"
+dark_background = "#F2F2F2"
+darker_background = "#E4E4E4"
+lighter_background = "#EAEAF8"
+
+foreground = "#0000AA"
+dark_foreground = "#555555"
+light_foreground = "#000000"
+bright_foreground = "#000000"
+
+selection_foreground = "#000000"
+selection_background = "#55FFFF"
+
+# EGA: on a white page "yellow" is Terry's brown, the dim yellow of the palette.
+red = "#AA0000"
+yellow = "#AA5500"
+orange = "#FF5555"
+green = "#00AA00"
+cyan = "#00AAAA"
+blue = "#0000AA"
+magenta = "#AA00AA"
+brown = "#AA5500"
+
+bright_red = "#FF5555"
+bright_yellow = "#FFFF55"
+bright_green = "#55FF55"
+bright_cyan = "#55FFFF"
+bright_blue = "#5555FF"
+bright_magenta = "#FF55FF"
+
+hyprland_active_border = "#0000AA"
+hyprland_inactive_border = "#AAAAAA"
