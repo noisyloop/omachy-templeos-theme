@@ -43,37 +43,38 @@ switcher and pick one:
 
 ## Taking a screenshot
 
-The theme listing on [omarchy.org/themes](https://omarchy.org/themes/) wants a 16:9 shot of
-a real session with a terminal and an editor open, using the theme's own wallpaper, with no
-cursor, notification or anything personal in it. Everything below ships with Omarchy.
+[omarchy.org/themes](https://omarchy.org/themes/) lists each theme with one 16:9 screenshot
+of a real session: a terminal and an editor open, the theme's own wallpaper, and no cursor,
+notification or anything personal. `screenshot.sh` takes it for you.
 
-1. Install the theme (above) and pick the `1-temple` wallpaper.
-2. Set the scene. Open a terminal and run `fastfetch` or `btop` in it. Open a second
-   terminal and edit some code with `nvim`. Close anything showing personal information,
-   and wait for any notifications to clear.
-3. Take the shot without the mouse cursor. `grim` leaves the cursor out by default. From
-   one of the terminals run this, then move the mouse to a screen edge and wait 5 seconds:
+1. Install the theme and pick the `1-temple` wallpaper (`Super + Ctrl + Space`).
+2. Open a terminal (`Super + Return`) and check your screen size:
 
    ```sh
-   sleep 5 && grim ~/preview.png
+   ~/.config/omarchy/themes/omachy-templeos/screenshot.sh --info
    ```
 
-4. If your screen isn't 16:9 (for example a 16:10 laptop), crop it:
+   1920x1080 or 2560x1440 is ideal. Anything else gets cropped to a centered 16:9.
+3. Open a second terminal and start the editor: `nvim ~/.config/omarchy/themes/omachy-templeos/colors.toml`.
+   To show more of the wallpaper, float the windows with `Super + T` and move them with
+   `Super + drag` (resize with `Super + right-drag`).
+4. In the first terminal, run the script:
 
    ```sh
-   magick ~/preview.png -gravity center -crop 16:9 +repage ~/preview.png
+   ~/.config/omarchy/themes/omachy-templeos/screenshot.sh
    ```
 
-5. Convert it for the site. Aim for 1200×675 and under about 100KB:
+   That terminal turns into a clean `fastfetch` window. Move the mouse to a screen edge and
+   wait 8 seconds. The script hides the top bar and clock, clears notifications, captures the
+   screen without the cursor, puts the bar back, and strips all metadata.
 
-   ```sh
-   magick ~/preview.png -strip -resize '1200>' -quality 80 ~/templeos.webp
-   ```
+The files land in `~/templeos-screenshot/`:
 
-`~/templeos.webp` goes in `assets/themes/` of
-[omarchy-site](https://github.com/omacom/omarchy-site). Replace `preview.png` in this repo
-with `~/preview.png` so Omarchy's theme switcher shows the real thing too. (The current
-`preview.png` is a rendered mockup.)
+- `templeos.webp`: 1200×675, under 100KB, for `assets/themes/` in
+  [omarchy-site](https://github.com/omacom/omarchy-site)
+- `preview.png`: full size, to replace this repo's `preview.png` (currently a rendered mockup)
+
+Use `--keep-bar` to leave the bar in, or `--delay 15` for more time to set up.
 
 ## Palette
 
@@ -102,6 +103,7 @@ it is on the real hardware, so warnings stay readable.
 - `backgrounds/`: the three wallpapers.
 - `unlock.png`: the pixel-font TempleOS logo for the disk-unlock (Plymouth) screen.
 - `icons.theme`, `chromium.theme`: Yaru-blue icons and a white browser frame.
+- `screenshot.sh`: takes the omarchy.org screenshot (see above).
 
 ## Credits
 
