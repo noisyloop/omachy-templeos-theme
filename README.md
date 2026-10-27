@@ -6,13 +6,9 @@ A light [Omarchy](https://omarchy.org) theme built from the 16-color EGA palette
 [TempleOS](https://templeos.org): blue ink on a white page, blue window borders, and
 pixel-art wallpapers drawn at 640×360 and scaled up 6× with nearest-neighbor.
 
-![TempleOS theme on the Omarchy desktop](screenshots/1-desktop.webp)
+![TempleOS theme: btop and Neovim on Omarchy](screenshots/session.webp)
 
-## Screenshots
-
-| Omarchy menu | Terminal |
-|---|---|
-| ![The Omarchy menu in TempleOS colors](screenshots/2-menu.webp) | ![A Foot terminal in TempleOS colors](screenshots/3-terminal.webp) |
+![The Temple wallpaper on the Omarchy desktop](screenshots/desktop.webp)
 
 ## Requirements
 
