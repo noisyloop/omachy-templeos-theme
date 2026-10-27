@@ -6,7 +6,20 @@ A light [Omarchy](https://omarchy.org) theme built from the 16-color EGA palette
 [TempleOS](https://templeos.org): blue ink on a white page, blue window borders, and
 pixel-art wallpapers drawn at 640×360 and scaled up 6× with nearest-neighbor.
 
-![TempleOS theme preview](preview.png)
+![TempleOS theme on the Omarchy desktop](screenshots/1-desktop.webp)
+
+## Screenshots
+
+| Omarchy menu | Terminal |
+|---|---|
+| ![The Omarchy menu in TempleOS colors](screenshots/2-menu.webp) | ![A Foot terminal in TempleOS colors](screenshots/3-terminal.webp) |
+
+## Requirements
+
+- A current [Omarchy](https://omarchy.org) release, which builds each app's colors from a
+  theme's `colors.toml`.
+- Nothing else. The theme ships only colors, wallpapers and images, no scripts that run
+  on their own.
 
 ## Install
 
@@ -72,7 +85,8 @@ The files land in `~/templeos-screenshot/`:
 
 - `templeos.webp`: 1200×675, under 100KB, for `assets/themes/` in
   [omarchy-site](https://github.com/omacom/omarchy-site)
-- `preview.png`: full size, to replace this repo's `preview.png` (currently a rendered mockup)
+- `preview.png`: full size, to replace this repo's `preview.png` (the picture Omarchy's theme
+  switcher shows)
 
 Use `--keep-bar` to leave the bar in, or `--delay 15` for more time to set up.
 
@@ -103,7 +117,8 @@ it is on the real hardware, so warnings stay readable.
 - `backgrounds/`: the three wallpapers.
 - `unlock.png`: the pixel-font TempleOS logo for the disk-unlock (Plymouth) screen.
 - `icons.theme`, `chromium.theme`: Yaru-blue icons and a white browser frame.
-- `screenshot.sh`: takes the omarchy.org screenshot (see above).
+- `screenshot.sh`: takes the omarchy.org screenshot (see above). It only runs when you run it.
+- `screenshots/`: the images in this README.
 
 ## Credits
 
