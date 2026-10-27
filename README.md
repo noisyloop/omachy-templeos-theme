@@ -54,42 +54,6 @@ switcher and pick one:
 | Update to the latest     | `omarchy-theme-update`                                               |
 | Remove                   | `omarchy theme remove omachy-templeos`                               |
 
-## Taking a screenshot
-
-[omarchy.org/themes](https://omarchy.org/themes/) lists each theme with one 16:9 screenshot
-of a real session: a terminal and an editor open, the theme's own wallpaper, and no cursor,
-notification or anything personal. `screenshot.sh` takes it for you.
-
-1. Install the theme and pick the `1-temple` wallpaper (`Super + Ctrl + Space`).
-2. Open a terminal (`Super + Return`) and check your screen size:
-
-   ```sh
-   ~/.config/omarchy/themes/omachy-templeos/screenshot.sh --info
-   ```
-
-   1920x1080 or 2560x1440 is ideal. Anything else gets cropped to a centered 16:9.
-3. Open a second terminal and start the editor: `nvim ~/.config/omarchy/themes/omachy-templeos/colors.toml`.
-   To show more of the wallpaper, float the windows with `Super + T` and move them with
-   `Super + drag` (resize with `Super + right-drag`).
-4. In the first terminal, run the script:
-
-   ```sh
-   ~/.config/omarchy/themes/omachy-templeos/screenshot.sh
-   ```
-
-   That terminal turns into a clean `fastfetch` window. Move the mouse to a screen edge and
-   wait 8 seconds. The script hides the top bar and clock, clears notifications, captures the
-   screen without the cursor, puts the bar back, and strips all metadata.
-
-The files land in `~/templeos-screenshot/`:
-
-- `templeos.webp`: 1200×675, under 100KB, for `assets/themes/` in
-  [omarchy-site](https://github.com/omacom/omarchy-site)
-- `preview.png`: full size, to replace this repo's `preview.png` (the picture Omarchy's theme
-  switcher shows)
-
-Use `--keep-bar` to leave the bar in, or `--delay 15` for more time to set up.
-
 ## Palette
 
 | Role       | Color     | EGA name    |
