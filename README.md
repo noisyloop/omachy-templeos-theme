@@ -14,8 +14,7 @@ pixel-art wallpapers drawn at 640×360 and scaled up 6× with nearest-neighbor.
 
 - A current [Omarchy](https://omarchy.org) release, which builds each app's colors from a
   theme's `colors.toml`.
-- Nothing else. The theme ships only colors, wallpapers and images, no scripts that run
-  on their own.
+- Nothing else. The theme ships only colors, wallpapers and images, no scripts.
 
 ## Install
 
@@ -77,7 +76,6 @@ it is on the real hardware, so warnings stay readable.
 - `backgrounds/`: the three wallpapers.
 - `unlock.png`: the pixel-font TempleOS logo for the disk-unlock (Plymouth) screen.
 - `icons.theme`, `chromium.theme`: Yaru-blue icons and a white browser frame.
-- `screenshot.sh`: takes the omarchy.org screenshot (see above). It only runs when you run it.
 - `screenshots/`: the images in this README.
 
 ## Credits
